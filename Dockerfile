@@ -2,7 +2,7 @@
 FROM krmp-d2hub-idock.9rum.cc/goorm/node:16 AS build
 WORKDIR /usr/src/app
 COPY krampoline/package*.json ./
-RUN npm ci
+RUN npm i
 COPY krampoline/ ./
 RUN npm run build
 
