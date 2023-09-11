@@ -10,12 +10,4 @@ const staticServerUri = env.VITE_A || "";
 export default defineConfig({
   //base: `/${staticServerUri}`,
   plugins: [react()],
-        build: {
-        rollupOptions: {
-            external: [
-                "react", // ignore react stuff
-                "react-dom",
-            ],
-        }
-    },
 })
