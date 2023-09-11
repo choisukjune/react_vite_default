@@ -3,10 +3,12 @@ import Header from '../Header'
 
 const About = () => {
     return(
+        <>
+        <Header/>
         <div>
-            <Header/>
-            React-Vite-About
+        <h1>Vite + React - ABOUT</h1>
         </div>
+      </>
     )
 }
 
