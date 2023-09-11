@@ -16,5 +16,5 @@ spec:
               serviceName: krampoline
               servicePort: 3000
             # path: /k63ebdb037a8fa(/|$)(.*)
-            path: /k8bfa1476a339a
+            path: /kf4d4b3af86f5a
             pathType: Prefix
