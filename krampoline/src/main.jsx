@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 console.log(import.meta.VITE_A)
@@ -20,8 +19,8 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
     },
-], { basename: "/" + import.meta.env.VITE_A });
-//]);
+//], { basename: "/" + import.meta.env.VITE_A });
+]);
 
 console.log(import.meta.env.VITE_A)
 
