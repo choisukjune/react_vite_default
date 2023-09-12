@@ -5,9 +5,16 @@ metadata:
   labels:
     app: frontend
 spec:
+  replicas: 3
+  minReadySeconds: 0
   selector:
     matchLabels:
       app: frontend
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 1
+    type: RollingUpdate
   template:
     metadata:
       labels:
@@ -16,4 +23,6 @@ spec:
       containers:
         - name: frontend
           # 여러분의 image 주소를 입력해주세요.
-          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a3b332386911
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_a1d3a5de5662
+          ports:
+            - containerPort: 3000
