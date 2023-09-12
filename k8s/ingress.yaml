@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    # nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app.kubernetes.io/managed-by: kargocd
@@ -13,8 +13,7 @@ spec:
     - http:
         paths:
           - backend:
-              serviceName: krampoline
+              serviceName: frontend
               servicePort: 3000
-            # path: /k63ebdb037a8fa(/|$)(.*)
-            path: /k9f8e1ab3d3d5a
-            pathType: Prefix
+            # 여러분의 app path 를 넣어주세요.
+            path: /k097d170c1331a(/|$)(.*)

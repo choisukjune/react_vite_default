@@ -8,6 +8,6 @@ const staticServerUri = env.VITE_A || "";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: `./`,
+  base: `/${staticServerUri}/`,
   plugins: [react()],
 })
