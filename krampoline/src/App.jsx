@@ -37,10 +37,10 @@ function Layout() {
   return (
     <div>
        <nav>
-            <Link to={ "/" }>Home</Link> | 
-            <Link to={ "/about" }>About</Link> | 
-            <Link to={ "/dashboard" }>Dashboard</Link> | 
-            <Link to={ "/nothing-here"}>Nothing Here</Link> 
+       <button><Link to={ "/" }>Home</Link> </button>
+       <button><Link to={ "/about" }>About</Link></button>
+       <button><Link to={ "/dashboard" }>Dashboard</Link></button>
+       <button><Link to={ "/nothing-here"}>Nothing Here</Link></button>
       </nav>
       <div>
         <a href="https://vitejs.dev" target="_blank">
