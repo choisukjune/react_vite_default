@@ -10,7 +10,7 @@ const staticUrl = import.meta.env.VITE_A || "";
 export default function App() {
   return (
     <div>
-      <h1>React + VITE + Eaxample</h1>
+      <h1>React + VITE + Example</h1>
 
       {/* Routes nest inside one another. Nested route paths build upon
             parent route paths, and nested route elements render inside

@@ -16,5 +16,5 @@ spec:
               serviceName: frontend
               servicePort: 3000
             # 여러분의 app path 를 넣어주세요.
-            path: /k78ef5dd5bc0ca(/|$)(.*)
+            path: /k0f184366fafba(/|$)(.*)
             # pathType: Prefix
